@@ -3,7 +3,7 @@
     <!-- <div id="nav">
       <router-link to="/">Home</router-link> |
       <router-link to="/shop">Shop</router-link> |
-       <router-link to="/about">About</router-link> |
+   
     </div> -->
 
 <!-- ========================= TOPBAR ========================= -->
@@ -63,7 +63,7 @@
 
 
        
-         <div class="col-6 col-md-3 d-none d-lg-flex"><a href="#"><img src="../../assets/img/top/Logo.png" alt="Kenkata" ></a></div> 
+         <div class="col-6 col-md-3 d-none d-lg-flex"><router-link to="/"><img src="../../assets/img/top/Logo.png" alt="Kenakata"></router-link></div> 
 
 
          <div id="searchbar" class="col-md col-lg-4 col-xl-5 d-none d-lg-block">
@@ -153,7 +153,7 @@
                </div>
             </div>
 
-            <div class="d-block d-lg-none"><img src="../../assets/img/top/Logo.png" alt="Kenkata" > </div>
+            <div class="d-block d-lg-none"><router-link to="/"><img src="../../assets/img/top/Logo.png" alt="Kenakata"></router-link></div>
 
             
 
@@ -174,7 +174,7 @@
                         Shop <i class="fas fa-chevron-down"></i>
                      </a>
                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
+                        <router-link to="/shop"  class="dropdown-item" >Shop</router-link>
                         <a class="dropdown-item" href="#">Another action</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a>
@@ -187,10 +187,8 @@
                         Products <i class="fas fa-chevron-down"></i>
                      </a>
                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
+                       <router-link to="/products" class="dropdown-item" >Products</router-link>
+
                      </div>
                   </li>
 
@@ -200,7 +198,7 @@
                         Categories <i class="fas fa-chevron-down"></i>
                      </a>
                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
+                        <router-link to="/categories" class="dropdown-item" >Categories</router-link>
                         <a class="dropdown-item" href="#">Another action</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a>
@@ -213,7 +211,7 @@
                         Pages <i class="fas fa-chevron-down"></i>
                      </a>
                      <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-item" href="#">Action</a>
+                        <router-link to="/pages" class="dropdown-item">Pages</router-link>
                         <a class="dropdown-item" href="#">Another action</a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a>
@@ -222,7 +220,7 @@
 
 
                   <li class="nav-item">
-                     <a class="nav-link" href="#">Blog</a>
+                     <router-link to="/blog" class="nav-link" >Blog</router-link>
                   </li>
                </ul>
                <form class="form-inline my-2 my-lg-0">
